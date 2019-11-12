@@ -9,31 +9,31 @@ if(!isset($_SESSION['user'])){
 <html lang="en">
 <head>
 
-  <!-- SITE TITTLE -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>O_MART</title>
-  
-  <!-- PLUGINS CSS STYLE -->
-  <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
-  <!-- Bootstrap -->
-  <link href="plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <!-- Owl Carousel -->
-  <link href="plugins/slick-carousel/slick/slick.css" rel="stylesheet">
-  <link href="plugins/slick-carousel/slick/slick-theme.css" rel="stylesheet">
-  <!-- Fancy Box -->
-  <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
-  <link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
-  <link href="plugins/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css" rel="stylesheet">
-  <!-- CUSTOM CSS -->
-  <link href="css/style.css" rel="stylesheet"> 
-  <link href="scss/_product.scss" rel="stylesheet">
-  <link href="scss/_typography.scss" rel="stylesheet">
-  <link href="scss/notif_design.scss" rel="stylesheet">
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    <!-- SITE TITTLE -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>O_MART</title>
+
+    <!-- PLUGINS CSS STYLE -->
+    <link href="plugins/jquery/dist/jquery.js" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Owl Carousel -->
+    <link href="plugins/slick-carousel/slick/slick.css" rel="stylesheet">
+    <link href="plugins/slick-carousel/slick/slick-theme.css" rel="stylesheet">
+    <!-- Fancy Box -->
+    <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
+    <link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+    <link href="plugins/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="scss/_products.scss" rel="stylesheet">
+    <link href="scss/_typography.scss" rel="stylesheet">
+    <link href="scss/notif_design.scss" rel="stylesheet">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
           name='viewport'/>
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css"
@@ -41,17 +41,19 @@ if(!isset($_SESSION['user'])){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <!-- CSS Files -->
     <link href="assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet"/>
+</head>
+<head>
 
 
-  <!-- FAVICON -->
-  <link href="img/favicon.png" rel="shortcut icon">
+    <!-- FAVICON -->
+    <link href="images/icons/favicon.ico" rel="shortcut icon">
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
@@ -105,14 +107,14 @@ echo'
 <div class="row">		
     <div class="col-md-12">
         <div class="card">
-            <div class="card-body" style="background-image:radial-gradient(circle, rgba(100,25,52,0.5), rgba(100,25,52,0))">
+            <div class="card-body" style="background-image:radial-gradient(circle, rgba(100,25,52,0.5), rgba(200,25,52,0))">
                 <div class="table-responsive">
-                    <table class="table" style="background-image:linear-gradient(to  right, rgba(48,25,52,0), rgba(10,50,125,1), rgba(48,25,52,0.5))">
+                    <table class="table" style="background-image:linear-gradient(to  right, rgba(180,80,30,0), rgba(180,80,30,0.8), rgba(200,200,200,0.5))">
                     <thead class=" text-primary">
-                        <th style="background-image:linear-gradient(to right, rgba(10,50,125,0), rgba(10,50,125,0.7))">
-                        msg
+                        <th >
+                        message
                         </th>
-                        <th style="background-image:linear-gradient(to right, rgba(10,50,125,0.7), rgba(10,50,125,0))">
+                        <th >
                         seller_email
                         </th>
                     </thead>
@@ -175,8 +177,8 @@ echo'
     </footer>
 
     <!-- JAVASCRIPTS -->
-    <script src="plugins/jquery/jquery.min.js"></script>
-    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
     <script src="plugins/tether/js/tether.min.js"></script>
     <script src="plugins/raty/jquery.raty-fa.js"></script>
     <script src="plugins/bootstrap/dist/js/popper.min.js"></script>
