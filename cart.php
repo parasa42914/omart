@@ -109,7 +109,7 @@ echo'
         <div class="card">
             <div class="card-body" style="background-image:radial-gradient(circle, rgba(100,25,52,0.5), rgba(200,25,52,0))">
                 <div class="table-responsive">
-                    <table class="table" style="background-image:linear-gradient(to  right, rgba(180,80,30,0), rgba(180,80,30,0.8), rgba(200,200,200,0.5))">
+                    <table class="table" style="background-image:linear-gradient(to  right, rgba(180,80,30,0.1), rgba(180,80,30,0.8), rgba(200,200,200,0.5))">
                     <thead class=" text-primary">
                         <th >
                         message
