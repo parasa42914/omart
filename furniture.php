@@ -211,7 +211,7 @@ if(!isset($_SESSION['user'])){
                                                 
 
                                             ?>
-                                            <h4 class="card-title" name="study table"><a href="" >Study Table Combo</a></h4>
+                                            <h4 class="card-title" name="study table">Study Table Combo</h4>
                                         
 
                                             <ul class="list-inline product-meta">

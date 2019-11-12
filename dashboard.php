@@ -73,7 +73,7 @@
 						<ul class="navbar-nav ml-auto mt-10">
                         
                             <li class="nav-item">
-                                <a class="nav-link login-button" href="logout.php" style="background-color:aqua">logout</a>
+                                <a class="nav-link login-button" href="logout.php" style="background-color:#ff8080">logout</a>
                             </li>
 						</ul>
 					</div>
@@ -100,7 +100,7 @@
 								<i class="fa fa-grav"></i> Fitness
 							</li>
 							<li class="list-inline-item">
-								<i class="fa fa-car"></i> vehicles
+								<i class="fa fa-briefcase"></i> skin care
 							</li>
 							<li class="list-inline-item">
 								<i class="fa fa-laptop"></i> electronics
@@ -159,9 +159,9 @@
                                     <div class="card">
                                         <div class="thumb-content">
                                             <!-- <div class="price">$200</div> -->
-                                            <a href="single.php">
+                                            <!-- <a href="single.php"> -->
                                                 <img class="card-img-top img-fluid" src="images/products/products-1.jpg" alt="Card image cap">
-                                            </a>
+                                            <!-- </a> -->
                                         </div>
                                         <div class="card-body">
                                         <?php 
@@ -174,13 +174,13 @@
                                                 $seller_email=$row['seller_email'];
                                                 $seller_id=$row['seller_id'];
                                             ?>
-                                            <h4 class="card-title"><a href="single.php" name="11inch macbook">11inch Macbook Air</a></h4>
+                                            <h4 class="card-title"><a name="11inch macbook">11inch Macbook Air</a></h4>
                                             <?php 
                                             $_SESSION["p_name"]='name';
                                             ?>
                                             <ul class="list-inline product-meta">
                                                 <li class="list-inline-item">
-                                                    <a href=""><i class="fa fa-folder-open-o"></i>Electronics</a>
+                                                    <a href="electronic.php"><i class="fa fa-folder-open-o"></i>Electronics</a>
                                                 </li>
                                                 <!-- <li class="list-inline-item">
                                                     <a href=""><i class="fa fa-calendar"></i>26th December</a>
@@ -210,9 +210,9 @@
                                     <div class="card">
                                         <div class="thumb-content">
                                             <!-- <div class="price">$200</div> -->
-                                            <a href="single.php">
+                                            <!-- <a href="single.php"> -->
                                                 <img class="card-img-top img-fluid" src="images/products/products-2.jpg" alt="Card image cap">
-                                            </a>
+                                            <!-- </a> -->
                                         </div>
                                         <div class="card-body">
                                         <?php 
@@ -225,19 +225,19 @@
                                                 $seller_email=$row['seller_email'];
                                                 $seller_id=$row['seller_id'];
                                             ?>
-                                            <h4 class="card-title" name="study table"><a href="single.php" >Study Table Combo</a></h4>
+                                            <h4 class="card-title" name="study table"><a>Study Table Combo</a></h4>
                                             <?php 
                                                 $_SESSION["p_name"]='name';
                                             ?>
 
                                             <ul class="list-inline product-meta">
                                                 <li class="list-inline-item">
-                                                    <a href=""><i class="fa fa-folder-open-o"></i>Furnitures</a>
+                                                    <a href="furniture.php"><i class="fa fa-folder-open-o"></i>Furnitures</a>
                                                 </li>
                                                 <!-- <li class="list-inline-item">
                                                     <a href=""><i class="fa fa-calendar"></i>26th December</a>
                                                 </li> -->
-                                            </ul>
+                                            </ul><br>
                                             <p class="card-text" style="font-style:bold">Product details are : <?php echo " ".$detail." "?></p>
                                             <p class="card-text">Cost is : ₹<?php echo " ".$cost." "?></p>
                                             <p class="card-text">Seller email id is : <?php echo " ".$seller_email." "?></p>                                            <!-- <div class="product-ratings">
@@ -262,9 +262,9 @@
                                     <div class="card">
                                         <div class="thumb-content">
                                             <!-- <div class="price">$200</div> -->
-                                            <a href="single.php">
+                                            <!-- <a href="single.php"> -->
                                                 <img class="card-img-top img-fluid" src="images/products/dellinspiron.jpg" alt="Card image cap">
-                                            </a>
+                                            <!-- </a> -->
                                         </div>
                                         <div class="card-body">
                                         <?php 
@@ -277,18 +277,19 @@
                                                 $seller_email=$row['seller_email'];
                                                 $seller_id=$row['seller_id'];
                                             ?>
-                                            <h4 class="card-title"><a href="single.php">Dell Inspiron 7570 i5</a></h4>
+                                            <h4 class="card-title"><a>Dell Inspiron 7570 i5</a></h4>
                                             <?php 
                                             $_SESSION["p_name"]='Dell Inspiron 7570 i5';
                                             ?>
                                             <ul class="list-inline product-meta">
                                                 <li class="list-inline-item">
-                                                    <a href=""><i class="fa fa-folder-open-o"></i>Electronics</a>
+                                                    <a href="electronic.php"><i class="fa fa-folder-open-o"></i>Electronics</a>
                                                 </li>
                                                 <!-- <li class="list-inline-item">
                                                     <a href=""><i class="fa fa-calendar"></i>26th December</a>
                                                 </li> -->
                                             </ul>
+                                            <br>
                                             <p class="card-text" style="font-style:bold">Product details are : <?php echo " ".$detail." "?></p>
                                             <p class="card-text">Cost is : ₹<?php echo " ".$cost." "?></p>
                                             <p class="card-text">Seller email id is : <?php echo " ".$seller_email." "?></p>                                            <!-- <div class="product-ratings">
@@ -378,7 +379,6 @@
                             <ul class="category-list">
                                 <li>bat </li>
                                 <li>ball </li>
-                                <li>Dumbells </li>
                                 <li>chess </li>
                                 <li>batminton</li>
                             </ul>
@@ -392,9 +392,10 @@
                                 <h4><a href="fashion.php">Fashion</a></h4>
                             </div>
                             <ul class="category-list">
-                                <li>Mens </li>
-                                <li>Womens </li>
-                                <li>Children </li>
+                                <li>Men </li>
+                                <li>Women </li>
+                                <li>Boy </li>
+                                <li>Girl</li>
                              </ul>
                         </div>
                     </div>
@@ -409,7 +410,6 @@
                                 <li>plastic </li>
                                 <li>car </li>
                                 <li>bike </li>
-                                <li>barbie </li>  
 								<li>beach toys </li>
 	                        </ul>
                         </div>

@@ -68,10 +68,10 @@ if(isset($_SESSION['user'])){
                         </ul>
 						<ul class="navbar-nav ml-auto mt-10">
 							<li class="nav-item">
-								<a class="nav-link login-button" href="login.php" style="background-color:aqua">Login</a>
+								<a class="nav-link login-button" href="login.php" style="background-color:#ff8080">Login</a>
 							</li>
                             <li class="nav-item">
-                                <a class="nav-link login-button" href="signup.php" style="background-color:aqua">signup</a>
+                                <a class="nav-link login-button" href="signup.php" style="background-color:#ff8080">signup</a>
                             </li>
                             
 						</ul>
@@ -99,7 +99,7 @@ if(isset($_SESSION['user'])){
 								<i class="fa fa-grav"></i> Fitness
 							</li>
 							<li class="list-inline-item">
-								<i class="fa fa-car"></i> vehicles
+								<i class="fa fa-briefcase"></i> skin care
 							</li>
 							<li class="list-inline-item">
 								<i class="fa fa-laptop"></i> electronics
@@ -344,7 +344,6 @@ if(isset($_SESSION['user'])){
                             <ul class="category-list">
                                 <li>bat </li>
                                 <li>ball </li>
-                                <li>Dumbells </li>
                                 <li>chess </li>
                                 <li>batminton</li>
                             </ul>
@@ -360,7 +359,8 @@ if(isset($_SESSION['user'])){
                             <ul class="category-list">
                                 <li>Mens </li>
                                 <li>Womens </li>
-                                <li>Children </li>
+                                <li>Boy </li>
+                                <li>Girl</li>
                              </ul>
                         </div>
                     </div>
@@ -375,7 +375,6 @@ if(isset($_SESSION['user'])){
                                 <li>plastic </li>
                                 <li>car </li>
                                 <li>bike </li>
-                                <li>barbie </li>  
 								<li>beach toys </li>
 	                        </ul>
                         </div>

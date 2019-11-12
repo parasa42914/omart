@@ -32,12 +32,79 @@ if(isset($_SESSION['user'])){
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("images/img_nature.jpg");
+  min-height: 600px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  margin: 5px 10px 22px -20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 40px;
+  max-width: 600px;
+  max-height: 40px;
+  padding: 60px;
+  background-color: transparent;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 10px 22px -20px;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+background-color: beige;
+  color: grey;
+  padding: 16px 10px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+
+}
+
+.btn:hover {
+  opacity: 1;
+  background: #4CAF50;
+}
+
+
+</style>
 </head>
 <body>
 	
-	<div class="limiter">
+	<!-- <div class="limiter">
 		<div class="container-login100">
-			<div class="wrap-login100">
+			<div class="bg-img">
 				<form class="login100-form validate-form" method="post" action="./verifylogin.php">
 					<span class="login100-form-title p-b-34">
 						Account Login
@@ -68,7 +135,32 @@ if(isset($_SESSION['user'])){
 				<div class="login100-more" style="background-image: url('images/login.jpg');"></div>
 			</div>
 		</div>
-	</div>
+	</div> -->
+	<div class="bg-img">
+  	<form method="post" action="./verifylogin.php" class="container">
+    <!-- <h1>Login</h1> -->
+
+    <label for="email" style="font-size:40px"><b><span>Username</span></b></label>
+    <input type="text" placeholder="Enter username" name="username" required>
+
+    <label for="psw" style="font-size:40px"><b><span>Password</span></b></label>
+    <input type="password" placeholder="Enter Password" name="pass" required>
+
+	<button type="submit" class="btn">Login</button>
+	<br><br>
+	<button type="submit" class="btn"><a href="signup.php">Signup</a></button>
+	<!-- <div class="btn">
+		<a href="signup.php" class="btn">
+			Sign Up
+		</a>
+	</div> -->
+	<!-- <script>
+		function myfunc(){
+			header("location : signup.php");
+		}
+		</script> -->
+  </form>
+</div>
 	
 	
 

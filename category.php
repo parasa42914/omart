@@ -367,12 +367,12 @@
                                         <div class="thumb-content">
                                             <!-- <div class="price">$200</div> -->
                                             <!-- <a href="single.php"> -->
-                                                <img class="card-img-top img-fluid" src="images/products/Beats Bluetooth Headphones.jpg" alt="Card image cap">
+                                                <img class="card-img-top img-fluid" src="images/products/JBL Live.jpeg" alt="Card image cap">
                                             <!-- </a> -->
                                         </div>
                                         <div class="card-body">
                                         <?php 
-                                                $sql = "SELECT * FROM elec WHERE pro_id=3";
+                                                $sql = "SELECT * FROM elec WHERE pro_id=6";
                                                 $result = mysqli_query($con, $sql);
                                                 $row = mysqli_fetch_array($result);
                                                 $detail=$row['detail'];
