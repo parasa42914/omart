@@ -109,7 +109,7 @@ html {
 }
 
 @-ms-viewport {
-  width: device-width;
+  min-width: device-width;
 }
 
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -5721,7 +5721,7 @@ a.bg-light:focus, a.bg-light:hover {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: blanchedalmond !important;
 }
 
 a.bg-dark:focus, a.bg-dark:hover {
@@ -6135,8 +6135,11 @@ a.bg-dark:focus, a.bg-dark:hover {
 }
 
 .justify-content-around {
+  justify-content: space-around !important;
+}
+
+.justify-content-around {
   -ms-flex-pack: distribute !important;
-      justify-content: space-around !important;
 }
 
 .align-items-start {
@@ -6270,9 +6273,13 @@ a.bg-dark:focus, a.bg-dark:hover {
         justify-content: space-between !important;
   }
   .justify-content-sm-around {
-    -ms-flex-pack: distribute !important;
-        justify-content: space-around !important;
+    justify-content: space-around !important;
   }
+
+  .justify-content-sm-around {
+    -ms-flex-pack: distribute !important;
+  }
+
   .align-items-sm-start {
     -ms-flex-align: start !important;
         align-items: flex-start !important;
@@ -6389,9 +6396,13 @@ a.bg-dark:focus, a.bg-dark:hover {
         justify-content: space-between !important;
   }
   .justify-content-md-around {
-    -ms-flex-pack: distribute !important;
-        justify-content: space-around !important;
+    justify-content: space-around !important;
   }
+
+  .justify-content-md-around {
+    -ms-flex-pack: distribute !important;
+  }
+
   .align-items-md-start {
     -ms-flex-align: start !important;
         align-items: flex-start !important;
@@ -6627,9 +6638,13 @@ a.bg-dark:focus, a.bg-dark:hover {
         justify-content: space-between !important;
   }
   .justify-content-xl-around {
-    -ms-flex-pack: distribute !important;
-        justify-content: space-around !important;
+    justify-content: space-around !important;
   }
+
+  .justify-content-xl-around {
+    -ms-flex-pack: distribute !important;
+  }
+
   .align-items-xl-start {
     -ms-flex-align: start !important;
         align-items: flex-start !important;

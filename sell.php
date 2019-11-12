@@ -30,13 +30,13 @@ if(!isset($_SESSION['user'])){
 </head>
 
 <body>
-    <div class="page-wrapper bg-dark p-t-80 p-b-50" style="background-image:linear-gradient(to bottom right, rgba(255,0,0,0), rgba(255,0,0,1))">
+    <div>
         <div class="wrapper wrapper--w900" >
             <div class="card card-6">
                 <div class="card-heading">
                     <h2 class="title">submit the ad for your product</h2>
                 </div>
-                <div class="card-body" style="background-image:radial-gradient( white, lightsalmon, orchid )">
+                <div class="card-body" style="background-image:radial-gradient( lightgoldenrodyellow, lightsalmon, mediumpurple )">
                     <form method="post" action="./sell_pro.php">
                         <div class="form-row">
                             <div class="name">User name</div>
