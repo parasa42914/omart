@@ -13,9 +13,8 @@ if(isset($_SESSION['user'])){
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>O_MART</title>
-  
   <!-- PLUGINS CSS STYLE -->
-  <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+  <link href="plugins/jquery/dist/jquery.js/jquery.min.js" rel="stylesheet">
   <!-- Bootstrap -->
   <link href="plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
@@ -32,7 +31,7 @@ if(isset($_SESSION['user'])){
   
 
   <!-- FAVICON -->
-  <link href="img/favicon.png" rel="shortcut icon">
+  <link href="images/icons/favicon.ico" rel="shortcut icon">
 
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -158,12 +157,14 @@ if(isset($_SESSION['user'])){
                                     <div class="card">
                                         <div class="thumb-content">
                                             <!-- <div class="price">$200</div> -->
-                                            <a href="single.php">
-                                                <img class="card-img-top img-fluid" class="animated heartBeat infinite" src="images/products/products-1.jpg" alt="Card image cap">
+                                            <a href="login.php">
+                                                <img class="card-img-top img-fluid"  src="images/products/products-1.jpg" alt="Card image cap">
                                             </a>
                                         </div>
                                         <div class="card-body">
-                                            <h4 class="card-title"><a href="single.php" name="11inch macbook">11inch Macbook Air</a></h4>
+                                            <a href="login.php">
+                                                <h4 class="card-title"><a >11inch Macbook Air</a></h4>
+                                            </a>
                                             <?php 
                                             $_SESSION["p_name"]='name';
                                             ?>
@@ -198,12 +199,14 @@ if(isset($_SESSION['user'])){
                                     <div class="card">
                                         <div class="thumb-content">
                                             <!-- <div class="price">$200</div> -->
-                                            <a href="single.php">
+                                            <a href="login.php">
                                                 <img class="card-img-top img-fluid" src="images/products/products-2.jpg" alt="Card image cap">
                                             </a>
                                         </div>
                                         <div class="card-body">
-                                            <h4 class="card-title" name="study table"><a href="single.php" >Study Table Combo</a></h4>
+                                            <a href="login.php">
+                                                 <h4 class="card-title" ><a  >Study Table Combo</a></h4>
+                                            </a>
                                             <?php 
                                                 $_SESSION["p_name"]='name';
                                             ?>
@@ -239,12 +242,14 @@ if(isset($_SESSION['user'])){
                                     <div class="card">
                                         <div class="thumb-content">
                                             <!-- <div class="price">$200</div> -->
-                                            <a href="single.php">
+                                            <a href="login.php">
                                                 <img class="card-img-top img-fluid" src="images/products/dellinspiron.jpg" alt="Card image cap">
                                             </a>
                                         </div>
                                         <div class="card-body">
-                                            <h4 class="card-title"><a href="single.php">Dell Inspiron 7570 i5</a></h4>
+                                            <a href="login.php">
+                                                <h4 class="card-title"><a >Dell Inspiron 7570 i5</a></h4>
+                                            </a>
                                             <?php 
                                             $_SESSION["p_name"]='Dell Inspiron 7570 i5';
                                             ?>
@@ -339,7 +344,7 @@ if(isset($_SESSION['user'])){
                         <div class="category-block">
                             <div class="header">
                                 <i class="fa fa-gamepad icon-bg-6"></i>
-                                <h4><a href="bike.php">sports</a></h4>
+                                <h4><a href="sports.php">sports</a></h4>
                             </div>
                             <ul class="category-list">
                                 <li>bat </li>
@@ -369,7 +374,7 @@ if(isset($_SESSION['user'])){
                         <div class="category-block">
                             <div class="header">
                                 <i class="fa fa-car icon-bg-6"></i>
-                                <h4><a href="car.php">toys</a></h4>
+                                <h4><a href="toys.php">toys</a></h4>
                             </div>
                             <ul class="category-list">
                                 <li>plastic </li>
@@ -456,8 +461,8 @@ if(isset($_SESSION['user'])){
 </footer>
 
   <!-- JAVASCRIPTS -->
-  <script src="plugins/jquery/jquery.min.js"></script>
-  <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+  <script src="plugins/jquery/dist/jquery.min.js"></script>
+  <script src="plugins/jquery/dist/jquery.min.js"></script>
   <script src="plugins/tether/js/tether.min.js"></script>
   <script src="plugins/raty/jquery.raty-fa.js"></script>
   <script src="plugins/bootstrap/dist/js/popper.min.js"></script>
